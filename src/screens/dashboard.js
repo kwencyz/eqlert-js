@@ -19,6 +19,7 @@ import {
     Tooltip
 } from 'chart.js';
 import React, { useEffect, useState } from 'react';
+import LineChart from '../components/LineChart';
 
 // Register Chart.js components
 ChartJS.register(
@@ -193,9 +194,9 @@ export default function Dashboard() {
                     </TableContainer>
                 </Grid>
 
-{/*                 <Grid item xs={12}>
+                <Grid item xs={12}>
                     <LineChart chartData={testData} />
-                </Grid> */}
+                </Grid>
             </Grid>
 
             <Snackbar
