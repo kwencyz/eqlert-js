@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+}
+
+.layout {
+  display: flex;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.sidebar-expanded .sidebar {
+  width: 240px;
+}
+
+.sidebar-minimized .sidebar {
+  width: 70px;
+}
+
+.content {
+  flex-grow: 1;
+  transition: all 0.3s ease;
+}
+
+.sidebar-expanded .content {
+  padding-left: 240px;
+  padding-right: 10px;
+}
+
+.sidebar-minimized .content {
+  padding-left: 70px;
+  padding-right: 10px;
+}
